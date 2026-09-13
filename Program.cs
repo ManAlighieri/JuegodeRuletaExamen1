@@ -1,5 +1,6 @@
 ﻿// Examen - Juego de la Ruleta
 //Alejandro de Jesus Delgado Gonzalez
+using System;
 namespace JuegodeRuleta
 {
     internal class Program
