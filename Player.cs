@@ -20,7 +20,15 @@ namespace JuegodeRuleta
 
         public List<string> BuscarHistorial(string texto)
         {
-            return Historial.Where(linea => linea.Contains(texto, StringComparison.OrdinalIgnoreCase)).ToList();
+            List<string> resultado = new List<string>();
+            foreach (string linea in Historial)
+            {
+                if (linea.ToLower().Contains(texto.ToLower()))
+                {
+                    resultado.Add(linea);
+                }
+            }
+            return resultado;
         }
         
         public void MostrarHistorial()

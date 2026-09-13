@@ -15,9 +15,14 @@ namespace JuegodeRuleta
 
             casillas.Add(new Numero(0, "Verda"));
 
-            for (int i = 1; i < rojos.Length; i++)
+            for (int i = 1; i <= 36; i++)
             {
-                string color = rojos.Contains(i) ? "Rojo" : "Negro ";
+                bool esRojo = false;
+                foreach (int r in rojos)
+                {
+                    if (r == i) esRojo = true;
+                }
+                string color = esRojo ? "Rojo" : "Negro";
                 casillas.Add(new Numero(i, color));
             }
         }

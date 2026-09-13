@@ -27,7 +27,7 @@ namespace JuegodeRuleta
                     return ValorApuesta == resultado.Valor.ToString();
                 case "Color":
                     return ValorApuesta == resultado.Color;
-                case "SiPar":
+                case "Paridad":
                     string paridadResultado = resultado.EsPar() ? "Par" : "Impar";
                     return ValorApuesta == paridadResultado;
                 default:

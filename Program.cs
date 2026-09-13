@@ -1,7 +1,5 @@
 ﻿// Examen - Juego de la Ruleta
-// Simula el giro de una ruleta de casino (0-36) donde el jugador
-// puede apostar a un numero, color o a par/impar, gana o
-// pierde dinero segun el resultado de cada giro.
+//Alejandro de Jesus Delgado Gonzalez
 namespace JuegodeRuleta
 {
     internal class Program
