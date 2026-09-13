@@ -4,7 +4,11 @@ using System.Text;
 
 namespace JuegodeRuleta
 {
-    internal class Player
+    public class Player
     {
+        public string Nombre {  get; set; }
+        public decimal Saldo { get; set; }
+        public decimal SaldoIni { get; set; 
+
     }
 }
